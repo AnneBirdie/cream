@@ -1,0 +1,826 @@
+@media ((max-width: 2048px) and (orientation: portrait)) {
+    @media (min-width: 1200px){
+        html{
+            font-size: 36px;
+        }
+    }
+    @media (min-width: 1600px){
+        html{
+            font-size: 48px;
+        }
+    }
+    @media (min-width: 2048px){
+        html{
+            font-size: 54px;
+        }
+    }
+/*menu........................................................*/
+.menu_show_items{
+    align-self: start;
+    margin-top: 3%;
+}
+.menu_container_author{
+    grid-template-columns: 1fr;
+    margin-bottom: 10%;
+}
+.menu_author_img img{
+    width: 90%;
+}
+.menu_author_img p{
+    width: 90%;
+}
+.menu_author_text p{
+    font-size: 1.2rem;
+}
+.menu_author_text p:first-child{
+    font-size: 1.5rem;
+    margin-bottom: 2%;
+}
+
+.menu_container_others{
+    grid-template-columns: repeat(1, 1fr);
+}
+.menu_author_text{
+    grid-column: 1 / 1;
+    margin-bottom: 5%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-row: 1 / 2;
+}
+.menu_category img{
+    width: 90%;
+}
+.menu_category p{
+    width: 90%;
+}
+
+
+.menu_back, .cake_back{
+    width: 8vh;
+    height: 8vh;
+    font-size: 0.9rem;
+}
+
+.top_container_items{
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.top_container_items h1{
+    margin-left: 2%;
+}
+
+.container_items{
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.item_title, .item_price{
+    font-size: 1.5rem;
+}
+
+.description_top{
+    margin-bottom: 5%;
+}
+
+.description_container{
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.description_container_text{
+    width: 90%;
+}
+
+.description_title{
+    font-size: 1.5rem;
+    border: none;
+}
+.description_text{
+    font-size: 1rem;
+    border: none;
+    text-align: center;
+}
+.description_Img{
+    width: 90%;
+}
+.description_count div{
+    width: 100%;
+}
+.description_count div div{
+    width: 90%;
+    height: auto;
+}
+
+.description_count div div p{
+    width: 32%;
+}
+    /*form data.............................................................*/
+    #reg_form{
+        width: 90%;
+    }
+    .form-checkbox{
+        font-size: 0.7rem;
+    }
+    .checkbox.style-f .checkbox__body {
+        margin-left: 5vw;
+      }
+      .basketBack{
+        margin-bottom: 5%;
+      }
+      .basketTakeOrder_res_active{
+        width: 90%;
+      }
+
+
+/*constructor...............................................................*/
+.svgLayer svg{
+    width: 100%;
+    height: auto;
+}
+#add_layer{
+    font-size: 1rem;
+}
+.diameters{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 3%;
+    grid-row-gap: 3%;
+    margin-bottom: 5%;
+}
+
+.diameter{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+.constructor_main{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.constructor_main_add_layer{
+    margin-top: 3%;
+}
+#constructor_main_cake{
+    grid-template-columns: 50% 50%;
+    column-gap: 3vh;
+    row-gap: 1vh;
+}
+
+.select {
+    width: 85%;
+}
+.new-select {
+    font-size: 0.9rem;
+}
+.new-select__item span {
+    padding: 1%;
+}
+.constructor_bottom{
+    margin-top: 3%;
+    margin-bottom: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#constructor_price, #constructor_weight, #constructor_addToBasket{
+    width: 90%;
+    margin-top: 3%;
+}
+    /*REVIEWS...............................................................*/
+    .review_show{
+        grid-template-columns: 1fr;
+        height: 50vh;
+    }
+    .review_text{
+        font-size: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .review_photo{
+       display: none;
+    }
+    .reviews_slide img{
+        height: 2vh;
+    }
+    .leaveReview{
+        font-size: 0.8rem;
+    }
+}
+@media ((max-width: 960px) and (orientation: portrait)) {
+    html{
+        font-size: 30px;
+    }
+    nav{
+        width: 10vh;
+        font-size: 0.6rem;
+    }
+    .nav_small{
+        width: 10vh;
+    }
+    
+    .nav_big{
+        width: 10vh;
+    }
+    @media (max-width: 600px){
+        html{
+            font-size: 28px;
+        }
+        nav{
+            font-size: 0.6rem;
+        }
+    }
+    @media (max-width: 600px){
+        html{
+            font-size: 24px;
+        }
+    }
+    @media (max-width: 576px){
+        html{
+            font-size: 20px;
+        }
+    }
+    @media (max-width: 480px){
+        html{
+            font-size: 16px;
+        }
+        nav{
+            font-size: 1rem;
+        }
+    }
+    @media (max-width: 320px){
+        html{
+            font-size: 10px;
+        }
+        nav{
+            font-size: 0.5rem;
+        }
+    }
+
+    
+
+    /*Block 0...............................................................*/
+    .block_0_title{
+        font-size: 3rem;
+        margin-top: 20%;
+        margin-bottom: 10%;
+    }
+    @media (max-width: 600px){
+        .block_0_title{
+            font-size: 2rem;
+        }
+    }
+    @media (max-width: 320px){
+        .block_0_title{
+            font-size: 1.5rem;
+        }
+    }
+    /*REVIEWS...............................................................*/
+    .review_show{
+        grid-template-columns: 1fr;
+        height: 50vh;
+    }
+    .review_text{
+        font-size: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    @media (max-width: 320px){
+        .review_text{
+            font-size: 0.6rem;
+        }
+    }
+    .review_photo{
+       display: none;
+    }
+    .reviews_slide img{
+        height: 2vh;
+    }
+    .leaveReview{
+        font-size: 0.8rem;
+    }
+    /*sale.............................................................*/
+    .sale_title{
+        font-size: 1.5rem;
+    }
+    .sale_text{
+        margin-top: 5%;
+        font-size: 1.2rem;
+    }
+    .sale_info{
+        margin-top: 5%;
+        font-size: 0.8rem;
+    }
+    @media (max-width: 320px){
+        .sale_title{
+            font-size: 1rem;
+        }
+        .sale_text{
+            font-size: 0.9rem;
+        }
+    }
+
+    /*about........................................................*/
+    .about_main{
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        width: 90%;
+    }
+    .about_text{
+        font-size: 1.3rem;
+    }
+    .about_main div{
+        height: auto;
+        margin-bottom: 5%;
+    }
+
+    @media (max-width: 320px){
+        .about_text{
+            font-size: 0.9rem;
+        }
+    }
+
+    /*menu........................................................*/
+
+    .menu_show_items{
+        align-self: start;
+        margin-top: 3%;
+    }
+    .menu_container_author{
+        grid-template-columns: 1fr;
+        margin-bottom: 10%;
+    }
+    .menu_author_img img{
+        width: 90%;
+    }
+    .menu_author_img p{
+        width: 90%;
+    }
+    .menu_author_text p{
+        font-size: 1.2rem;
+    }
+    .menu_author_text p:first-child{
+        font-size: 1.5rem;
+        margin-bottom: 2%;
+    }
+    @media (max-width: 320px){
+        .menu_author_text p{
+            font-size: 0.7rem;
+        }
+        .menu_author_text p:first-child{
+            font-size: 0.9rem;
+        }
+    }
+
+    .menu_container_others{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .menu_author_text{
+        grid-column: 1 / 1;
+        margin-bottom: 5%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        grid-row: 1 / 2;
+    }
+    .menu_category img{
+        width: 90%;
+    }
+    .menu_category p{
+        width: 90%;
+    }
+
+
+    .menu_back, .cake_back{
+        width: 8vh;
+        height: 8vh;
+        font-size: 0.9rem;
+    }
+
+    .top_container_items{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .top_container_items h1{
+        margin-left: 2%;
+    }
+
+    .container_items{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .item_title, .item_price{
+        font-size: 1.5rem;
+    }
+
+    @media (max-width: 320px){
+        .item_title, .item_price{
+            font-size: 1rem;
+        }
+    }
+
+    .description_top{
+        margin-bottom: 5%;
+    }
+
+    .description_container{
+        margin-bottom: 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .description_container_text{
+        width: 90%;
+    }
+
+    .description_title{
+        font-size: 1.5rem;
+        border: none;
+    }
+    .description_text{
+        font-size: 1rem;
+        border: none;
+        text-align: center;
+    }
+    .description_Img{
+        width: 90%;
+    }
+    .description_count div{
+        width: 100%;
+    }
+    .description_count div div{
+        width: 90%;
+        height: auto;
+    }
+    
+    .description_count div div p{
+        width: 32%;
+    }
+
+    /*constructor...............................................................*/
+    .svgLayer svg{
+        width: 100%;
+        height: auto;
+    }
+    #add_layer{
+        font-size: 1rem;
+    }
+    .diameters{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 3%;
+        grid-row-gap: 3%;
+        margin-bottom: 5%;
+    }
+
+    .diameter{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+    }
+    .constructor_main{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .constructor_main_add_layer{
+        margin-top: 3%;
+    }
+    #constructor_main_cake{
+        grid-template-columns: 25% 75%;
+        column-gap: 3vh;
+        row-gap: 1vh;
+    }
+
+    .select {
+        width: 85%;
+    }
+    .new-select {
+        font-size: 0.9rem;
+    }
+    .new-select__item span {
+        padding: 1%;
+    }
+    .constructor_bottom{
+        margin-top: 3%;
+        margin-bottom: 3%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #constructor_price, #constructor_weight, #constructor_addToBasket{
+        width: 90%;
+        margin-top: 3%;
+    }
+    /*block_2 Basket............................................................*/
+    .basket_item{
+        flex-direction: column;
+    }
+    .basket_item_name{
+        border: none;
+        width: 95%;
+    }
+    .current_item_quantity, 
+    .basket_item_price{
+        margin-left: 0%;
+        margin-top: 2%;
+    }
+    .basket_item_delete{
+        font-size: 2vw;
+    }
+    #basket_DeliveryRule{
+        margin-left: 0;
+        width:100%;
+    }
+    /*form data.............................................................*/
+    #reg_form{
+        width: 90%;
+    }
+    .form-checkbox{
+        font-size: 0.7rem;
+    }
+    .checkbox.style-f .checkbox__body {
+        margin-left: 5vw;
+      }
+      .basketBack{
+        margin-bottom: 5%;
+      }
+      .basketTakeOrder_res_active{
+        width: 90%;
+      }
+
+}
+@media ((max-width: 1440px) and (orientation: landscape)) {
+    html{
+        font-size: 24px;
+    }
+}
+@media ((max-width: 1366px) and (orientation: landscape)) {
+    html{
+        font-size: 22px;
+    }
+}
+@media ((max-width: 1152px) and (orientation: landscape)) {
+    html{
+        font-size: 20px;
+    }
+}
+@media ((max-width: 1024px) and (orientation: landscape)) {
+    html{
+        font-size: 20px;
+    }
+    
+    nav{
+        width: 10vh;
+        font-size: 0.6rem;
+    }
+    .nav_small{
+        width: 10vh;
+    }
+    
+    .nav_big{
+        width: 10vh;
+    }
+
+    @media (max-width: 640px){
+        html{
+            font-size: 16px;
+        }
+    }
+    @media (max-width: 320px){
+        html{
+            font-size: 10px;
+        }
+    }
+        /*REVIEWS...............................................................*/
+        .review_show{
+            grid-template-columns: 1fr;
+            height: 50vh;
+        }
+        .review_text{
+            font-size: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        @media (max-width: 320px){
+            .review_text{
+                font-size: 0.6rem;
+            }
+        }
+        .review_photo{
+           display: none;
+        }
+        .reviews_slide img{
+            height: 3vh;
+        }
+        .leaveReview{
+            font-size: 0.8rem;
+        }
+        /*menu........................................................*/
+
+    .menu_show_items{
+        align-self: start;
+        margin-top: 3%;
+    }
+    .menu_container_author{
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 10%;
+    }
+    .menu_author_img img{
+        width: 90%;
+    }
+    .menu_author_img p{
+        width: 90%;
+    }
+    .menu_author_text p{
+        font-size: 1.2rem;
+    }
+    .menu_author_text p:first-child{
+        font-size: 1.5rem;
+        margin-bottom: 2%;
+    }
+    @media (max-width: 320px){
+        .menu_author_text p{
+            font-size: 0.7rem;
+        }
+        .menu_author_text p:first-child{
+            font-size: 0.9rem;
+        }
+    }
+
+    .menu_container_others{
+        grid-template-columns: repeat(3, 1fr);
+        margin-bottom: 3%;
+    }
+    .menu_author_text{
+        grid-column: 1 / 1;
+        margin-bottom: 5%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        grid-row: 1 / 2;
+    }
+    .menu_category img{
+        width: 90%;
+    }
+    .menu_category p{
+        width: 90%;
+    }
+
+
+    .menu_back, .cake_back{
+        width: 2rem;
+        height: 2rem;
+        font-size: 0.9rem;
+    }
+
+    .top_container_items{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .top_container_items h1{
+        margin-left: 2%;
+    }
+
+    .container_items{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    @media (max-width: 854px){
+        .container_items{
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    .item_title, .item_price{
+        font-size: 1.5rem;
+        height: 3.2rem;
+    }
+
+    @media (max-width: 320px){
+        .item_title, .item_price{
+            font-size: 1rem;
+        }
+    }
+
+    .description_top{
+        margin-bottom: 5%;
+    }
+
+
+    .description_title{
+        font-size: 1rem;
+        border: none;
+    }
+    .description_text{
+        font-size: 0.7rem;
+        border: none;
+    }
+    .description_count div{
+        width: 100%;
+    }
+    .description_count div div{
+        width: 90%;
+        height: auto;
+    }
+    
+
+    /*constructor...............................................................*/
+    .svgLayer svg{
+        width: 100%;
+        height: auto;
+    }
+    #add_layer{
+        font-size: 1rem;
+    }
+    .diameters{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 3%;
+        grid-row-gap: 3%;
+        margin-bottom: 5%;
+    }
+
+    .diameter{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+    }
+    .constructor_main{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .constructor_main_add_layer{
+        margin-top: 3%;
+    }
+    #constructor_main_cake{
+        grid-template-columns: 50% 50%;
+        column-gap: 3vh;
+        row-gap: 1vh;
+    }
+
+    .select {
+        width: 85%;
+    }
+    .new-select {
+        font-size: 0.9rem;
+    }
+    .new-select__item span {
+        padding: 1%;
+    }
+    .constructor_bottom{
+        margin-top: 3%;
+        margin-bottom: 3%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #constructor_price, #constructor_weight, #constructor_addToBasket{
+        width: 90%;
+        margin-top: 3%;
+    }
+        /*form data.............................................................*/
+        #reg_form{
+            width: 90%;
+        }
+        .form-checkbox{
+            font-size: 0.7rem;
+        }
+        .checkbox.style-f .checkbox__body {
+            margin-left: 5vw;
+          }
+          .basketBack{
+            margin-bottom: 5%;
+          }
+          .basketTakeOrder_res_active{
+            width: 90%;
+          }
+}
+
+@media ((min-width: 2048px) and (orientation: landscape)) {
+    html{
+        font-size: 36px;
+    }
+}
+
+@media ((min-width: 2560px) and (orientation: landscape)) {
+    html{
+        font-size: 40px;
+    }
+}

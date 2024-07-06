@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet">
+
+        <link rel="shortcut icon" href="images/icon.png" type="image/png">
+        <title>Cream Кондитерская</title>
+
+        <link rel = "stylesheet" href="styles/style.css">
+        <link rel = "stylesheet" href="styles/svgAnimation.css">
+        <link rel = "stylesheet" href="styles/media.css">
+
+        <script type="text/javascript" defer src='scripts/script.js'></script>
+        <script type="text/javascript" defer src='scripts/cakesMenu.js'></script>
+        <script type="text/javascript" defer src='scripts/constructor.js'></script>
+        <script type="text/javascript" defer src='scripts/basket.js'></script>
+        <script type="text/javascript" defer src='scripts/reviews.js'></script>
+    </head>
+    <body>
+    <!--NAVIGATION.................................................................................................................................................................................-->
+        <nav>
+        <div class="navigation">
+            <div class="icon">
+                <svg class="nav_anim" id="icon_img" width="89" height="120" viewBox="0 0 89 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20.5 118H15.9353C13.6264 118 11.6178 116.419 11.0753 114.175L2.29244 77.846C1.63393 75.1222 3.69769 72.5 6.5 72.5V72.5M20.5 118L12 72.5M20.5 118H27.5M12 72.5H23M12 72.5H6.5M27.5 118L23 72.5M27.5 118H36.5M23 72.5H33M36.5 118L33 72.5M36.5 118H44.5M33 72.5H42M44.5 118V72.5M44.5 118H51M44.5 72.5H54.5M44.5 72.5H42M51 118L54.5 72.5M51 118H59M54.5 72.5H65.5M59 118L65.5 72.5M59 118H67.25M65.5 72.5H75.75M75.75 72.5L67.25 118M75.75 72.5H80.875M67.25 118H71.5224C73.8507 118 75.8709 116.393 76.3944 114.124L84.8476 77.4938C85.4371 74.939 83.4969 72.5 80.875 72.5V72.5M80.875 72.5C90.4899 66.0207 88.5 52.5 75.75 46M65.5 59.5L42 72.5M6.5 72.5C-0.129674 63.9815 2.43638 59.2775 12 55.4918M36.5 49C26.1039 51.2543 17.7758 53.2056 12 55.4918M12 55.4918C10.015 45.8349 12.4961 40.947 20.5 37.935M36.5 34.5C29.7387 35.4201 24.4476 36.4494 20.5 37.935M20.5 37.935C18.4462 36.1695 22.7956 24.456 29.2208 16.7795C31.0793 14.5592 34.4093 15.0133 36.0697 17.3854L36.5 18M48.5 46C60.4025 42.4275 63.5334 40.0963 67.25 29.4253M70.5 55.4918C84.6497 34.4863 75.8701 31.5662 59 27M70.5 3.00001C57.4073 0.174079 55.2256 2.48507 54.5 9.00001" stroke="#EFEFEF" stroke-width="3" stroke-linecap="round" class="svg-elem-icon"></path>
+                    <circle cx="48" cy="20" r="10.5" stroke="#EFEFEF" stroke-width="3" class="svg-elem-icon"></circle>
+                </svg>                    
+                <img id = "open_close" src="images/nav_open_close.svg" alt="open_close_menu">
+            </div>
+            <div class="nav_element hidden"></div>
+            <div id = "nav_menu" class="nav_element hidden">
+                <svg class="nav_anim" width="68" height="75" viewBox="0 0 68 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M34.25 14.5C28.4406 10.2772 26.6858 7.56885 32.2701 2.61828C33.3728 1.64078 35.0522 1.73256 36.0503 2.81658C41.0919 8.29226 39.5029 10.8327 34.25 14.5Z" fill="#D9D9D9" class="svg-elem-menu"></path>
+                    <path d="M12 50.5H5C3.34315 50.5 2 51.8431 2 53.5V70.5C2 72.1569 3.34315 73.5 5 73.5H63C64.6569 73.5 66 72.1569 66 70.5V53.5C66 51.8431 64.6569 50.5 63 50.5H56.5M12 50.5V29C12 27.3431 13.3431 26 15 26H34.25M12 50.5H56.5M56.5 50.5V29C56.5 27.3431 55.1569 26 53.5 26H34.25M34.25 26V14.5M34.25 14.5C28.4406 10.2772 26.6858 7.56885 32.2701 2.61828C33.3728 1.64078 35.0522 1.73256 36.0503 2.81658C41.0919 8.29226 39.5029 10.8327 34.25 14.5Z" stroke="#EFEFEF" stroke-width="3" class="svg-elem-menu"></path>
+                </svg>                                       
+                <h1 class="nav_menu_title"> меню</h1>
+            </div>
+            <div id = "nav_basket" class="nav_element hidden">
+                <svg class="nav_anim" width="57" height="78" viewBox="0 0 57 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.5 32.5629C15.5 -8.43726 41 -7.93725 41 32.5629M5 21.0629H52C53.6569 21.0629 55 22.406 55 24.0629V72.5629C55 74.2197 53.6569 75.5629 52 75.5629H5C3.34315 75.5629 2 74.2197 2 72.5629V24.0629C2 22.406 3.34315 21.0629 5 21.0629Z" stroke="#EFEFEF" stroke-width="3" class="svg-elem-basket"></path>
+                </svg>
+                <h1 id = "nav_basket" class="nav_menu_title">корзина</h1>
+                <div id = "nav_basket_count" class="nav_menu_count">0</div>
+            </div>
+            <div id = "nav_sale" class="nav_element hidden">
+                <svg class="nav_anim" width="62" height="66" viewBox="0 0 62 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.5 60L58.5 5" stroke="#EFEFEF" stroke-width="3" stroke-linecap="round" class="svg-elem-sale"></path>
+                    <path d="M60.5 52.5C60.5 59.1813 55.2984 64.5 49 64.5C42.7016 64.5 37.5 59.1813 37.5 52.5C37.5 45.8187 42.7016 40.5 49 40.5C55.2984 40.5 60.5 45.8187 60.5 52.5Z" stroke="#EFEFEF" stroke-width="3" class="svg-elem-sale"></path>
+                    <path d="M24.5 13.5C24.5 20.1813 19.2984 25.5 13 25.5C6.70158 25.5 1.5 20.1813 1.5 13.5C1.5 6.81872 6.70158 1.5 13 1.5C19.2984 1.5 24.5 6.81872 24.5 13.5Z" stroke="#EFEFEF" stroke-width="3" class="svg-elem-sale"></path>
+                </svg>
+                <h1 class="nav_menu_title">акции</h1>
+            </div>
+            <div id = "nav_opinion" class="nav_element hidden">
+                <svg class="nav_anim"  width="82" height="89" viewBox="0 0 82 89" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="7.5" cy="30.5" r="6" fill="#EFEFEF" stroke="#EFEFEF" stroke-width="3" class="svg-elem-opinion"></circle>
+                    <circle cx="22.5" cy="14.5" r="6" fill="#EFEFEF" stroke="#EFEFEF" stroke-width="3" class="svg-elem-opinion"></circle>
+                    <circle cx="42.5" cy="7.5" r="6" fill="#EFEFEF" stroke="#EFEFEF" stroke-width="3" class="svg-elem-opinion"></circle>
+                    <circle cx="62.5" cy="14.5" r="6" fill="#EFEFEF" stroke="#EFEFEF" stroke-width="3" class="svg-elem-opinion"></circle>
+                    <circle cx="74.5" cy="30.5" r="6" fill="#EFEFEF" stroke="#EFEFEF" stroke-width="3" class="svg-elem-opinion"></circle>
+                    <circle cx="42" cy="42" r="6.5" fill="#EFEFEF" stroke="#EFEFEF" stroke-width="3" class="svg-elem-opinion"></circle>
+                    <path d="M53 87.5001H29.5C28.9477 87.5001 28.5 87.0524 28.5 86.5001V67.3005C28.5 66.8326 28.1756 66.4273 27.719 66.3248L4.78096 61.1754C4.32443 61.0729 4 60.6676 4 60.1997V55.1589C4 54.5484 4.5509 54.0817 5.15513 54.1694C32.5368 58.1454 49.0511 57.7864 78.3655 54.142C78.9627 54.0677 79.5 54.5319 79.5 55.1337V60.1928C79.5 60.6638 79.1713 61.071 78.7108 61.1703L54.7892 66.3299C54.3287 66.4292 54 66.8364 54 67.3074V86.5001C54 87.0524 53.5523 87.5001 53 87.5001Z" fill="#EFEFEF" stroke="#EFEFEF" stroke-width="3" class="svg-elem-opinion"></path>
+                </svg>                    
+                <h1 class="nav_menu_title">отзывы</h1>
+            </div>
+            <div id = "nav_about" class="nav_element hidden">
+                <svg class="nav_anim" width="57" height="79" viewBox="0 0 57 79" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="28" cy="16" r="14.5" fill="#EFEFEF" stroke="#EFEFEF" stroke-width="3" class="svg-elem-about"></circle>
+                    <path d="M41.6667 38.4147C23.9829 35.4095 14.7322 38.0788 13.7535 38.3865C13.6925 38.4057 13.635 38.4221 13.5729 38.4376C7.59011 39.9328 4.15889 46.9437 2.66667 52.5C1.44804 57.0376 2.20949 70.3167 2.53803 75.1388C2.60703 76.1515 3.42059 76.9415 4.4352 76.9726C10.135 77.1477 28.4216 77.6173 41.6667 76.9147C57.5443 76.0724 60.3971 41.5978 41.6667 38.4147Z" fill="#EFEFEF" stroke="#EFEFEF" stroke-width="3" class="svg-elem-about"></path>
+                </svg>                   
+                <h1 class="nav_menu_title">о нас</h1>
+            </div>
+        </div>
+        </nav>
+    <!--block_0 MAIN...............................................................................................................................................................................-->
+        <div id = "block_0" class = "block_show block_main">
+        <div id = "block_0_main" class="block_0_main">
+            <h1 class="block_0_title">Кондитерская Cream</h1>
+            <p class="block_0_text">В нашей кондитерской вы можете заказать торты авторской работы, только полезные и максимально вкусные <br><br>
+                Предлагаем вас окунуться в мир вкуса, попробуйте один раз и забудьте об остальном!</p>
+        </div>
+        </div>
+    <!--block_1 MENU...............................................................................................................................................................................-->
+        <div id = "block_1" class = "hidden block_menu">
+        <div class = "cakes_block">
+            <h1 class="titles title_menu">меню</h1>
+            <div class="menu_container_author">
+                <div class="menu_author_img  cake_btn">
+                    <img src="images/authors.png" alt="author's cake">
+                    <p>Авторский торт</p>
+                </div>
+                <div class="menu_author_text">
+                    <p>Только у нас </p>
+                    <p>собери свой торт по своим вкусовым предпочтениям и получи декор в подарок</p>
+                </div>
+            </div>
+            <div class="menu_container_others">
+                <div class="menu_category cake_btn">
+                    <img src="images/biscuit.png" alt="biscuit cake">
+                    <p>бисквитные торты</p>
+                </div>
+                <div class="menu_category cake_btn">
+                    <img src="images/dessert.png" alt="dessert">
+                    <p>десерты</p>
+                </div>
+                <div class="menu_category cake_btn">
+                    <img src="images/mousse.png" alt="mousse">
+                    <p>муссовые торты</p>
+                </div>
+            </div>
+        </div>
+        <div id="author_cake" class="hidden cakes_block">
+            <div class="top_container_items">
+                <div class="menu_back">назад</div>
+                <h1 class = "titles">конструктор</h1>
+                <div></div>
+            </div>
+            <div class="block_constructor">
+                <div class="diameter_container">
+                    <p>диаметр</p>
+                    <div id = "row_diameter"></div>
+                    <div class="diameters">
+                        <p id = "diameter_11" data-diameter="11" class = "diameter">11 см</p>
+                        <p id = "diameter_16" data-diameter="16" class = "diameter">16 см</p>
+                        <p id = "diameter_18" data-diameter="18" class = "diameter diameter_active">18 см</p>
+                        <p id = "diameter_20" data-diameter="20" class = "diameter">20 см</p>
+                        <p id = "diameter_22" data-diameter="22" class = "diameter">22 см</p>
+                        <p id = "diameter_26" data-diameter="26" class = "diameter">26 см</p>
+                    </div>
+                </div>
+                <div class="constructor_main">
+                    <div class="constructor_main_add_layer">
+                        <p id = "add_layer">добавить слой</p>
+                    </div>
+                    <div id = "constructor_main_cake"></div>
+                </div>
+                <div class="constructor_bottom">
+                    <div data-price="0" id="constructor_price">0</div>
+                    <div data-weight="0" id="constructor_weight">0</div>
+                    <div class = "constructor_addToBasket" id ="constructor_addToBasket">
+                        <p id ="constructor_addToBasket_text">добавить в корзину</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="biscuit_cake" class="hidden cakes_block">
+            <div class="top_container_items">
+                <div class="menu_back">назад</div>
+                <h1 class = "titles">бисквитные торты</h1>
+                <div></div>
+            </div>
+            <div id="container_items_biscuits" class = "container_items"></div>
+        </div>    
+        <div id="dessert" class="hidden cakes_block">
+            <div class="top_container_items">
+                <div class="menu_back">назад</div>
+                <h1 class = "titles">десерты</h1>
+                <div></div>
+            </div>
+            <div id="container_items_desserts" class = "container_items"></div>
+        </div>
+        <div id="mousse" class="hidden cakes_block">
+            <div class="top_container_items">
+                <div class="menu_back">назад</div>
+                <h1 class = "titles">муссовые торты</h1>
+                <div></div>
+            </div>
+            <div id="container_items_mousses" class = "container_items"></div>
+        </div>
+        <div id="menu_description_cake" class = "hidden"></div>
+        </div>
+    <!--block_2 BASKET.............................................................................................................................................................................-->
+        <div id = "block_2" class = "hidden block_basket">
+        <h1 class="titles">корзина</h1>
+        <div id = "basket_containers" class="basket_containers">
+            <div class="basket_items">
+                <p id = "emptyBasket">Ваша корзина пуста!</p>
+            </div>
+            <div class="basket_sales">
+                <div class="basket_sale"></div>
+                <div class="basket_sale_price"></div>
+            </div>
+            <div class="basket_total">
+                <p id = "TOTAL"></p>
+            </div>
+            <div id="placeOrder"></div>
+            <div id="basket_DeliveryRule"></div>
+        </div>
+        <div id="basketTakeOrder" class = "hidden">
+            <div class="basketBack">
+                <div id="btnBasketBack">назад</div>
+            </div>
+            <form id="reg_form" name = "reg_form">
+                <ul class="wrapper">
+                    <li class="form-row">
+                        <input name = "name" type="text" id="name" placeholder="ваше имя" maxlength = "15" required >
+                    </li>
+                    <li class="form-row">
+                        <input name = "phone" type="tel" id="phone" placeholder="ваш номер телефона" maxlength = "11" required >
+                    </li>
+                    <li  class="form-row">
+                        <p>пример : 89025065000</p>
+                    </li>
+                    <li class ="form-row" id ="personal_data">
+                        <label class="checkbox style-f">
+                            <input id = "check" required name="personal_data" type="checkbox"/>
+                                <div class="checkbox__checkmark"></div>
+                                <div class="checkbox__body">я даю согласие на обработку персональных данных <a download href = "согласие на обработку персональных данных.txt">(скачать)</a></div>
+                        </label>
+                    </li>
+                    <li class="form-row">
+                        <button id = "submit" type="submit">Отправить</button>
+                    </li>
+                </ul>
+            </form>
+        </div>
+        <div id = "basketTakeOrder_res" class="hidden">
+            <div class="basketBack">
+                <div id="btnBasketBack_1">назад</div>
+            </div>
+            <div class="basketTakeOrder_res_text">
+                Команда Cream приняла Ваш заказ.<br>
+                Мы перезвоним Вам в ближайшее время для уточнения деталей заказа
+            </div>
+        </div>
+        </div>
+    <!--block_3 SALE...............................................................................................................................................................................-->
+        <div id = "block_3" class = "hidden block_sale">
+        <h1 class="titles">акции</h1>
+        <div class="sale">
+            <h2 class="sale_title">
+                Акция “Счастливые часы”
+            </h2>
+            <div class="sale_text">
+                При заказе торта 3 числа каждого месяца скидка 3%
+            </div>
+        </div>
+        <div class="sale">
+            <h2 class="sale_title">
+                Акция “Сладкоежка”
+            </h2>
+            <div class="sale_text">
+                При заказе торта скидка 5% на десерты
+            </div>
+        </div>
+        <div class="sale_info">
+            *Акции не суммируются, применится наибольшая скидка<br>
+            *Не является публичной офертой
+        </div>
+        </div>
+    <!--block_4 OPINION............................................................................................................................................................................-->
+        <div id = "block_4" class = "hidden block_opinion">
+        <h1 class="titles">отзывы</h1>
+        <div class="reviews"></div>
+        <div class="review_bottom">
+            <div class="reviews_empty"></div>
+            <div class="reviews_slide">
+                <div id="last_review">
+                    <img src="images/left.png" alt="review_before">
+                </div>
+                <div id="center">
+                    <img src="images/center.png">
+                </div>
+                <div id="next_review">
+                    <img src="images/right.png" alt="review_after">
+                </div>    
+            </div>
+            <div class="leaveReview">
+                <a target="_blank" href="https://vk.com/topic-221028274_49158954">оставить отзыв</a>
+            </div>
+        </div>        
+        </div>
+    <!--block_5 ABOUT..............................................................................................................................................................................-->
+        <div id = "block_5" class = "hidden block_about">
+        <h1 class="titles">о нас</h1>
+        <div class="about_main">
+            <div class="about_contact">
+                <a href = "https://vk.com/club221028274" target="_blank"><img class= "about_img" src="images/vk.png" alt="vk"></a>
+                Cream вконтакте<br>https://vk.com/club221028274
+            </div>
+            <div class="about_call">
+                <a href = "tel:89026310626"><img class= "about_img" src="images/call.png" alt="call"></a>
+                Руководитель Cream<br>8 - 902 - 63 - 10 - 626
+            </div>
+        </div>
+        <h2 class="about_text">нам будет приятно получить от вас обратную связь</h2>
+        </div>
+    </body>
+</html>
